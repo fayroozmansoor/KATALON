@@ -17,3 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.google.com/')
+
+WebUI.setText(findTestObject('Object Repository/Page_Google/input__q'), 'TEST')
+
+WebUI.click(findTestObject('Object Repository/Page_Google/span_test'))
+
+WebUI.click(findTestObject('Object Repository/Page_test -  Google/span_Speedtest by Ookla - The Global Broadb_f45dd3'))
+
+WebUI.click(findTestObject('Object Repository/Page_Speedtest by Ookla - The Global Broadb_6d4e08/span_Go'))
+
+WebUI.closeBrowser()
+
